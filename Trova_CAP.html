@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+    #cancelIcon {
+      width: 10%;
+      margin: 11px 5px 11px 0;
+      border: 1px solid #b9b9b9;
+      margin-left: -37px;
+      border: none;
+      cursor: pointer;
+    }
+    #cancelIcon:focus {
+      outline: none;
+    }
+    .cancel-icon {
+      color: #999999;
+    }
+    .suggestion {
+      display: flex;
+      padding: 7px 0 7px 4px;
+      font-size: 14px;
+      -webkit-transition: 0.2s ease-in-out all;
+      -moz-transition: 0.2s ease-in-out all;
+      -o-transition: 0.2s ease-in-out all;
+      transition: 0.2s ease-in-out all;
+    }
+    .suggestion-name {
+      font-weight: bold;
+    }
+    .suggestion-cap {
+      padding-left: 7px;
+    }
+    .suggestion:hover {
+      background-color: rgb(1, 150, 110);
+      color: white;
+      cursor: pointer;
+      -webkit-transition: 0.3s ease-in-out all;
+      -moz-transition: 0.3s ease-in-out all;
+      -o-transition: 0.3s ease-in-out all;
+      transition: 0.3s ease-in-out all;
+    }
+    #findCapForm {
+      display: inline-flex;
+      width: 100%;
+    }
+
+    #findCap_container {
+      width: 372px;
+      padding: 10px
+    }
+
+    #findCapButton {
+      height: 40px;
+      width: 100%;
+      outline: none;
+      background-color: rgb(1, 150, 110);
+      color: white;
+      border: none;
+      font-weight: bold;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      border-radius: 5px;
+
+    }
+
+    #findCapButton:hover {
+      background-color: rgb(2, 108, 79);
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .cap-container {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .cap-code {
+      font-weight: bold;
+      font-size: 16px;
+      color: rgb(1, 150, 110);
+      padding: 2px;
+    }
+
+    .cap-code-text {
+      font-size: 12px;
+      padding:2px;
+      color: black;
+    }
+
+    input {
+      height: 30px;
+      margin: 10px 0;
+      border: 1px solid #b9b9b9;
+      width: 100%;
+    }
+
+    input:focus {
+      outline: auto 2px rgb(1, 150, 110);
+      border: none;
+      outline-style: solid;
+    }
+
+    .error {
+      color: rgb(220, 14, 14);
+    }
+
+    .separator-row {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .row {
+      margin-top: 10px;
+    }
+
+    .findCap-description {
+      font-size: 14px;
+    }
+    .nome-comune {
+      font-weight: bold;
+      font-size: 22px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="findCap_container">
+    <p class="findCap-description">Inserisci il <strong>nome del comune</strong> per trovare il CAP</p>
+    <form id="findCapForm">
+      <input id="inputComune" name="inputComune" type="text" />
+    </form>
+  </div>
+  <script src="Trova_CAP.js"></script>
+</body>
+
+</html>
